@@ -12,6 +12,10 @@
 /.next/
 /out/
 
+#prettier
+prettierrc.json
+.ptrettierignore
+
 # production
 /build
 

@@ -1,7 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 const Me: NextPage = () => {
   return (
@@ -12,9 +12,20 @@ const Me: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1> ME </h1>
+      <main className={styles.main}>
+        <h1> ME </h1>
+        <ul>
+          <li>Healthy lifestyle/Gym</li>
+          <li>Maths</li>
+          <li>Freedom</li>
+          <li>Philosophize</li>
+          <li>Party / Dancing / Piano </li>
+          <li>One Piece</li>
+        </ul>
+      </main>
+      <button> GO HOME </button>
     </div>
-  )
-}
+  );
+};
 
-export default Me
+export default Me;

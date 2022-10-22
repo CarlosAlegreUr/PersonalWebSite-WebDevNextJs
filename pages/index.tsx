@@ -57,6 +57,7 @@ const Home: NextPage = () => {
             <ul>
               <li>React</li>
               <li>NextJs</li>
+              <li>Hardhat</li>
             </ul>
           </li>
         </ul>

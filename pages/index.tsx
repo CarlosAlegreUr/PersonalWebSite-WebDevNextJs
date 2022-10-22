@@ -1,13 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Carlos Alegre's Web</title>
         <meta
           name="Software Dev Web: Carlos Alegre Urquizú"
           content="Personal projects' web page of software engineer Carlos Alegre Urquizú"
@@ -28,7 +29,18 @@ const Home: NextPage = () => {
           University of Barcelona
         </h6>
 
-        <h2> My Software Projects! </h2>
+        <Link href="/projects">
+          <a>
+            <h2> My Software Projects! </h2>
+          </a>
+        </Link>
+
+        <Link href="/me">
+          <a>
+            {" "}
+            <h3> About me </h3>
+          </a>
+        </Link>
 
         <h5> LinkedIn </h5>
         <h5> GitHub </h5>

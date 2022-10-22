@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const Projects: NextPage = () => {
@@ -40,8 +41,10 @@ const Projects: NextPage = () => {
             </ul>
           </li>
         </ul>
+        <Link href="/">
+          <button> GO HOME </button>
+        </Link>
       </main>
-      <button> GO HOME </button>
     </div>
   );
 };

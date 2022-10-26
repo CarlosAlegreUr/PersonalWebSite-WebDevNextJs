@@ -1,6 +1,6 @@
 export default function TechnologiesList() {
   return (
-    <div>
+    <div className="flex-row ">
       <hr />
       <h1> Technologies I've used: </h1>
       <ul>

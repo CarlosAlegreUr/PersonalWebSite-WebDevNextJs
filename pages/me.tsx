@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
+import InterestsBox from "../components/interestsBox";
+
 const Me: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -14,15 +16,49 @@ const Me: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1> ME </h1>
-        <ul>
-          <li>Healthy lifestyle/Gym</li>
-          <li>Maths</li>
-          <li>Freedom</li>
-          <li>Philosophize</li>
-          <li>Party / Dancing / Piano </li>
-          <li>One Piece</li>
-        </ul>
+        <h1> Likes </h1>
+        <InterestsBox
+          title="Healthy lifestyle/Gym"
+          description={description_healthyLifeStyleGym}
+          image="/../public/images/my_face.jpg"
+          imageAlt="The developer showing his trainned boddy"
+        />
+
+        <InterestsBox
+          title="Maths"
+          description={description_maths}
+          image="/../public/images/my_face.jpg"
+          imageAlt="Maths"
+        />
+
+        <InterestsBox
+          title="Freedom"
+          description={description_freedom}
+          image="/../public/images/my_face.jpg"
+          imageAlt="Freedom representation"
+        />
+
+        <InterestsBox
+          title="Philosophize"
+          description={description_philosophy}
+          image="/../public/images/my_face.jpg"
+          imageAlt="Greek statue"
+        />
+
+        <InterestsBox
+          title="Party / Dance / Piano"
+          description={description_partyAndDance}
+          image="/../public/images/my_face.jpg"
+          imageAlt="A party"
+        />
+
+        <InterestsBox
+          title="OnePiece"
+          description={description_onePiece}
+          image="/../public/images/my_face.jpg"
+          imageAlt="Luffy holding his hat, one piece"
+        />
+
         <Link href="/">
           <button> GO HOME </button>
         </Link>
@@ -30,5 +66,23 @@ const Me: NextPage = () => {
     </div>
   );
 };
+
+const description_healthyLifeStyleGym =
+  "Calisthenics and gym enjoyer, 4 trainings/week and healthy diet.";
+
+const description_maths =
+  "Pasionate about finding patterns, generalizing them and expressing them in compact ways.";
+
+const description_freedom =
+  "Pursue your happiness while living and letting live (hakuna matata)";
+
+const description_philosophy =
+  "My math-enjoyer brain likes to use math generalization analysis to understand human kind in a more philosophycal way.";
+
+const description_partyAndDance =
+  "Such a funny and cheap experience to dance in a party surounded by people in good mood. Or just playing some piano at night after a long day";
+
+const description_onePiece =
+  "A series about enjoying life despite of having to face your problems while pursuing your dreams. Best series ever.";
 
 export default Me;

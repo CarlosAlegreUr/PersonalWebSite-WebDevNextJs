@@ -1,8 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+
+import TechnologiesList from "../components/technologiesList";
+import MyPhoto from "../components/myPhoto";
+import SocialMediaNav from "../components/socialMediaNav";
+import AboutMe from "../components/aboutMe";
+import MyProjects from "../components/myProjects";
 
 const Home: NextPage = () => {
   return (
@@ -15,64 +20,18 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>Carlos Alegre's developer web</h1>
-        <Image
-          src="/../public/images/my_face.jpg"
-          width={200}
-          height={200}
-        ></Image>
-        <h6>
-          {" "}
-          Self-taught + 2 years of Informatics Engineering at Autonomous
-          University of Barcelona
-        </h6>
+        <h1 className="text-3xl font-bold underline">Hello world</h1>
+        <MyPhoto />
 
-        <Link href="/projects">
-          <a>
-            <h2> My Software Projects! </h2>
-          </a>
-        </Link>
+        <AboutMe />
 
-        <Link href="/me">
-          <a>
-            {" "}
-            <h3> About me </h3>
-          </a>
-        </Link>
+        <MyProjects />
 
-        <h5> LinkedIn </h5>
-        <h5> GitHub </h5>
-        <h5> Feever </h5>
+        <SocialMediaNav />
 
-        <hr />
-        <h1> Technologies I've used: </h1>
-        <ul>
-          <li>
-            Programming/Coding Languages
-            <ul>
-              <li>Solidity</li>
-              <li>C++</li>
-              <li>C</li>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>Linux Bash</li>
-              <li>R</li>
-              <li>Assembly x86</li>
-            </ul>
-          </li>
-          <li>
-            Frameworks
-            <ul>
-              <li>React</li>
-              <li>NextJs</li>
-              <li>Hardhat</li>
-            </ul>
-          </li>
-        </ul>
+        <TechnologiesList />
       </main>
 
       <footer className={styles.footer}>

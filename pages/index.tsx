@@ -2,14 +2,19 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import TechnologiesList from "../components/technologiesList";
-import MyPhoto from "../components/myPhoto";
-import SocialMediaNav from "../components/socialMediaNav";
-import AboutMe from "../components/aboutMe";
-import MyProjects from "../components/myProjects";
-import ContactMe from "../components/contactMe";
+import AboutMe from "../components/AboutMe";
+import { useState, useRef, ChangeEventHandler } from "react";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => {
+  const [displayProjects, setDisplayProjects] = useState<boolean>(true);
+  const selectBar = useRef();
+
+  // function handleChange() : ChangeEventHandler {
+  //
+  //
+  // }
+
   return (
     <>
       <Head>
@@ -20,20 +25,17 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <header className={styles.title}> Carlos Alegre's developer web</header>
+      <main className="block">
         <div className="flex">
-          <MyPhoto />
-          <div className="">
-            <h1 className={styles.title}>Carlos Alegre's developer web</h1>
-            <SocialMediaNav />
-          </div>
           <AboutMe />
+          {displayProjects && <Projects />}
+          <select>
+            <option> COOLER PROJECTS </option>
+            <option> MY BUSINESSES </option>
+            <option> TECHNOLOGIES I'VE TRIED/USED </option>
+          </select>
         </div>
-        <div className="flex justify-center">
-          <ContactMe />
-          <MyProjects />
-        </div>
-        <TechnologiesList/>
       </main>
     </>
   );

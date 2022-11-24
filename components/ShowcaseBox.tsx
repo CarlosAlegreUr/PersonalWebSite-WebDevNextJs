@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function InterestsBox(props: any) {
+export default function ShowCaseBox(props: any) {
   return (
     <div className="rounded-3xl bg-black text-center w-1/6">
       <h3> {props.title} </h3>

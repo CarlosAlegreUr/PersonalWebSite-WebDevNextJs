@@ -27,10 +27,10 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="main-header"> Carlos Alegre's portfiolio web</header>
+      <header className="main-header"> Carlos Alegre's portfiolio</header>
       <main className="block space-font">
         <button className="button3d" onClick={handleButtonsClick}>
-          Activate 3D animation
+          Activate 3D animation {"(todo...)"}
         </button>
         <div className="flex main-flex-div">
           <AboutMe />

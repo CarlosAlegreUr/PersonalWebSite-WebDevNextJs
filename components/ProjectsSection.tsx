@@ -6,7 +6,7 @@ interface usedProps {
     fetchProjectsFunc: () => ReactComponentElement<"ul">;
 }
 
-export default function Projects({title, fetchProjectsFunc} : usedProps) {
+export default function Projects({title, fetchProjectsFunc} : usedProps) : JSX.Element {
   const [displayProjects, setDisplayProjects] = useState(true);
   return (
     <section className="">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ShowCaseBox(props: any) {
+export default function ShowCaseBox(props: any) : JSX.Element{
   return (
     <div className="rounded-3xl bg-black text-center w-1/6 showcase-box">
       <br/>

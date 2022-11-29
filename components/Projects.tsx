@@ -1,4 +1,4 @@
-import ProjectSection from "./ProjectSection";
+import ProjectsSection from "./ProjectsSection";
 import { ReactComponentElement } from "react";
 
 interface ProjectsSection {
@@ -50,12 +50,12 @@ const allSections: Array<ProjectsSection> = [
   },
 ];
 
-export default function Projects() {
+export default function Projects() : JSX.Element {
   return (
     <main className="">
       {allSections.map((section: ProjectsSection) => {
         return (
-          <ProjectSection
+          <ProjectsSection
             title={section.title}
             fetchProjectsFunc={section.fetchProjectsFunc}
           />

@@ -1,7 +1,7 @@
 import ShowCaseBox from "./ShowcaseBox";
 import styles from "../styles/Home.module.css";
 
-const MyBusinesses: React.FC = () => {
+export default function MyBusinesses() : JSX.Element {
   return (
     <div className={styles.container}>
       <ShowCaseBox
@@ -27,5 +27,3 @@ const MyBusinesses: React.FC = () => {
     </div>
   );
 };
-
-export default MyBusinesses;

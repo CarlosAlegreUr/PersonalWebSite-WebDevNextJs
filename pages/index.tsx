@@ -29,25 +29,19 @@ const Home: NextPage = () => {
       </Head>
       <header className="main-header"> Carlos Alegre's portfiolio web</header>
       <main className="block space-font">
-        <button className="button3d" onClick={handleButtonsClick}>Activate 3D animation</button>
+        <button className="button3d" onClick={handleButtonsClick}>
+          Activate 3D animation
+        </button>
         <div className="flex main-flex-div">
           <AboutMe />
           <div className="showcase-padding occupy-all">
             <Projects />
           </div>
-          <ul>
-            <li>
-              <button>COOLER PROJECTS </button>
-            </li>
-            <li>
-              <button> MY BUSINESSES </button>
-            </li>
-            <li>
-              <button className="space_font">
-                TECHNOLOGIES I'VE TRIED/USED
-              </button>
-            </li>
-          </ul>
+          <div className="block">
+            <button> PROJECTS </button>
+            <button> MY BUSINESSES </button>
+            <button> TECHNOLOGIES I'VE TRIED/USED</button>
+          </div>
         </div>
       </main>
     </>

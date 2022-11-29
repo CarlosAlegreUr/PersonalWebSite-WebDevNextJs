@@ -15,7 +15,7 @@ const Me: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="block my-3"> Likes </h1>
+        <h1 className="block my-3 h1-projects-main"> Likes </h1>
         <ShowcaseBox
           title="Healthy lifestyle/Gym"
           description={description_healthyLifeStyleGym}

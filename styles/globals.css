@@ -13,9 +13,9 @@ html,
 body {
   font-family: Spaceman, Verdana, Geneva;
   background-color: aqua;
-  background-image: url("../public/images/aurora.gif");
+  background-image: url("../public/images/asteroid.webp");
   background-size: cover;
-  color: white;
+  color: rgba(255, 255, 255, 0.875);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -23,14 +23,15 @@ body {
 
 button {
   font-family: Spaceman, Verdana, Geneva;
-  background-color: orange;
-  border-color: purple;
+  background-color: rgb(193, 13, 13);
+  color: rgba(12, 12, 12, 0.742);
+  border-color: rgb(247, 123, 28);
   border-radius: 0.5rem;
   border-width: 0.25rem;
   margin: 0.5rem 0.12rem;
 }
 button:hover {
-  background-color: rgba(255, 166, 0, 0.816);
+  background-color: rgba(255, 166, 0, 0.875);
   transition-duration: 0.45s;
   color: black;
   border-color: rgb(255, 0, 255);
@@ -38,6 +39,32 @@ button:hover {
 button:active {
   opacity: 75%;
   transition: 0.1s;
+}
+
+.h1-projects-main {
+  width: 25rem;
+  font-size: 2.5em;
+  text-shadow: 0.1rem 0.1rem;
+  color: yellow;
+  margin: 1em 0em 0.75em 12em;
+}
+
+.project-element {
+  width: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.projects-list {
+  color: yellow;
+  text-align: center;
+  -moz-columns: 2;
+       columns: 2;
+  width: 75em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .space-font {
@@ -56,12 +83,16 @@ button:active {
   display: block;
 }
 
+.project-title-show-div {
+  display: flex;
+}
+
 .main-flex-div {
   padding: 3rem 0.5rem;
 }
 
 .sizeXD {
-  border-radius: 15rem;
+  border-radius: 10rem 35rem 10rem 35rem;
   border-color: purple;
 }
 
@@ -94,15 +125,18 @@ button:active {
 .showcase-box {
   font-family: Spaced, Verdana, Geneva;
   background: -webkit-linear-gradient(top, rgb(193, 13, 13), rgba(255, 255, 255, 0.446), rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.897));
-  color: rgb(0, 0, 0);
+  color: rgba(12, 12, 12, 0.742);
   width: 20em;
   border-radius: 7em 7em 2em 2em;
   margin: 1em 10em;
 }
 .showcase-box h3 {
   font-size: x-large;
-  color: rgb(243, 183, 34);
+  color: rgba(243, 34, 34, 0.644);
   text-shadow: 1em 1em 1em 4em;
+}
+.showcase-box .showcase-image {
+  border-radius: 7em 7em 2em 2em;
 }
 .showcase-box p {
   font-size: large;

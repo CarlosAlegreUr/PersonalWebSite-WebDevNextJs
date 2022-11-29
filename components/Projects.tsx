@@ -4,7 +4,7 @@ import ShowCaseBox from "./ShowcaseBox";
 export default function Projects() {
   // Use props
   return (
-    <div className={styles.container}>
+    <div className="">
       <main className={styles.main}>
         <h1> COOLER PROJECTS </h1>
         <ul className="columns-2">

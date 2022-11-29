@@ -2,18 +2,20 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import { useState, useReducer, ReducerState, ReducerAction } from "react";
+
 import AboutMe from "../components/AboutMe";
-import { useState, useRef, ChangeEventHandler } from "react";
 import Projects from "../components/Projects";
+import MyBusinesses from "../components/MyBusinesses";
+import TechnologiesList from "../components/TechnologiesList";
+
+// const reducer = (state, action) => {};
 
 const Home: NextPage = () => {
   const [displayProjects, setDisplayProjects] = useState<boolean>(true);
-  const selectBar = useRef();
+  // const [displaySelected, dispatch] = useReducer(reducer, [true, false, false]);
 
-  // function handleChange() : ChangeEventHandler {
-  //
-  //
-  // }
+  function handleButtonsClick() {}
 
   return (
     <>
@@ -25,20 +27,35 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.title}> Carlos Alegre's developer web</header>
-      <main className="block">
-        <div className="flex">
+      <header className="main-header"> Carlos Alegre's portfiolio web</header>
+      <main className="block space-font">
+        <button className="button3d" onClick={handleButtonsClick}>Activate 3D animation</button>
+        <div className="flex main-flex-div">
           <AboutMe />
-          {displayProjects && <Projects />}
-          <select>
-            <option> COOLER PROJECTS </option>
-            <option> MY BUSINESSES </option>
-            <option> TECHNOLOGIES I'VE TRIED/USED </option>
-          </select>
+          <div className="showcase-padding occupy-all">
+            <Projects />
+          </div>
+          <ul>
+            <li>
+              <button>COOLER PROJECTS </button>
+            </li>
+            <li>
+              <button> MY BUSINESSES </button>
+            </li>
+            <li>
+              <button className="space_font">
+                TECHNOLOGIES I'VE TRIED/USED
+              </button>
+            </li>
+          </ul>
         </div>
       </main>
     </>
   );
 };
 
+// {displaySelected.map((display: boolean) => display) &&
+// toShowElements.map((element) => element)}
+
+// {displayProjects && <Projects />}
 export default Home;

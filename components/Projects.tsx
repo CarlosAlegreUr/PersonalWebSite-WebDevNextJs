@@ -6,7 +6,7 @@ interface ProjectsSection {
   fetchProjectsFunc: () => ReactComponentElement<"ul">;
 }
 
-// To add a section add one more element to this array.
+// To add a section, add one more element to this array.
 const allSections: Array<ProjectsSection> = [
   {
     title: "Cooler Projects",

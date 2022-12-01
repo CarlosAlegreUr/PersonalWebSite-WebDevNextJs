@@ -7,7 +7,8 @@ interface usedProps {
 }
 
 export default function Projects({title, fetchProjectsFunc} : usedProps) : JSX.Element {
-  const [displayProjects, setDisplayProjects] = useState(true);
+  //TODO: change to true
+  const [displayProjects, setDisplayProjects] = useState(false);
   return (
     <section className="">
       <div className="project-title-show-div">

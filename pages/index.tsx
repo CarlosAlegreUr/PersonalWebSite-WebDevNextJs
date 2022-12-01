@@ -46,6 +46,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="main-header"> Carlos Alegre's portfiolio</header>
+      <div className="video-div">
+        <video autoPlay loop muted src="./videos/stars.mp4" />
+      </div>
       <main className="block space-font">
         <button
           className="button3d"
@@ -66,12 +69,34 @@ const Home: NextPage = () => {
           </div>
 
           <div className="block">
-            <button onClick={() => { dispatch({ type: "projects" }); }} > PROJECTS </button>
-            <button onClick={() => { dispatch({ type: "business" }); }} > MY BUSINESSES </button>
-            <button onClick={() => { dispatch({ type: "techs" });}}> TECHNOLOGIES I'VE TRIED/USED </button>
+            <button
+              onClick={() => {
+                dispatch({ type: "projects" });
+              }}
+            >
+              {" "}
+              PROJECTS{" "}
+            </button>
+            <button
+              onClick={() => {
+                dispatch({ type: "business" });
+              }}
+            >
+              {" "}
+              MY BUSINESSES{" "}
+            </button>
+            <button
+              onClick={() => {
+                dispatch({ type: "techs" });
+              }}
+            >
+              {" "}
+              TECHNOLOGIES I'VE TRIED/USED{" "}
+            </button>
           </div>
         </div>
       </main>
+      <footer> GO BACK TO THE TOP </footer>
     </>
   );
 };

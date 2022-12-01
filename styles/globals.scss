@@ -16,20 +16,54 @@ $showcase-box-col-num: 2;
 
 html,
 body {
-  font-family: Spaceman, Verdana, Geneva;
+  font-family: Spaceman, Spaced, Verdana, Geneva;
   background-color: aqua;
-  background-image: url("../public/images/asteroid.webp");
-  background-size: cover;
-  color: rgba(255, 255, 255, 0.875);
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-image: url("../public/images/stars.jpg");
+  color: white;
+}
+
+.main-header {
+  position: relative;
+  font-family: Spaced, Verdana, Geneva;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 5rem;
+  color: rgb(214, 10, 10);
+  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 156, 15), black);
+  border-radius: 75rem;
+  text-align: center;
+  display: block;
+  z-index: 2;
+}
+
+.video-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%; 
+  z-index: 3;
+  font-family: Spaceman, Verdana, Geneva;
+  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 156, 15), black);
+  border-radius: 12em 12em 0em 12em;
+  border-color: rgba(255, 0, 0, 0.705);
+  border-width: 0.1rem;
 }
 
 button {
   font-family: Spaceman, Verdana, Geneva;
-  background-color:  rgb(193, 13, 13);
+  background-color:  rgb(247, 6, 6);
   color: rgba(12, 12, 12, 0.742);
   border-color: rgb(247, 123, 28);
   border-radius: 0.5rem;
@@ -44,6 +78,18 @@ button {
   &:active {
     opacity: 75%;
     transition: 0.1s;
+  }
+}
+
+.grow{
+  transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+
+  &:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+    -webkit-transform: scale3d(1.5, 1.5, 0.3);
+    -moz-transform: scale3d(1.5, 1.5, 0.3);
   }
 }
 
@@ -70,18 +116,6 @@ button {
 
 .space-font {
   font-family: Spaced, Verdana, Geneva;
-}
-
-.main-header {
-  font-family: Spaced, Verdana, Geneva;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 5rem;
-  color: rgb(214, 10, 10);
-  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 156, 15), black);
-  border-radius: 75rem;
-  text-align: center;
-  display: block;
 }
 
 .project-title-show-div{

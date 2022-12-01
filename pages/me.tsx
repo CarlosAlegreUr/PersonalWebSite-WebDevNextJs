@@ -14,26 +14,26 @@ const Me: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header className="main-header fixed"> Personal Likes </header>
       <main className={styles.main}>
-        <h1 className="block my-3 h1-projects-main"> Likes </h1>
         <ShowcaseBox
-          title="Healthy lifestyle/Gym"
+          title="Healthy lifestyle/Training"
           description={description_healthyLifeStyleGym}
-          image="/../public/images/my_face.jpg"
+          image="/../public/images/calisthenics.jpg"
           imageAlt="The developer showing his trainned boddy"
         />
         <div className="flex justify-center space-x-96 my-20">
           <ShowcaseBox
             title="Maths"
             description={description_maths}
-            image="/../public/images/my_face.jpg"
+            image="/../public/images/maths.jpg"
             imageAlt="Maths"
           />
 
           <ShowcaseBox
             title="Freedom"
             description={description_freedom}
-            image="/../public/images/my_face.jpg"
+            image="/../public/images/freedom.jpg"
             imageAlt="Freedom representation"
           />
         </div>
@@ -42,14 +42,14 @@ const Me: NextPage = () => {
           <ShowcaseBox
             title="Philosophize"
             description={description_philosophy}
-            image="/../public/images/my_face.jpg"
+            image="/../public/images/philosophize.jpg"
             imageAlt="Greek statue"
           />
 
           <ShowcaseBox
             title="Party / Dance / Piano"
             description={description_partyAndDance}
-            image="/../public/images/my_face.jpg"
+            image="/../public/images/party.jpg"
             imageAlt="A party"
           />
         </div>
@@ -57,14 +57,15 @@ const Me: NextPage = () => {
         <ShowcaseBox
           title="OnePiece"
           description={description_onePiece}
-          image="/../public/images/my_face.jpg"
+          image="/../public/images/onepiece.jpg"
           imageAlt="Luffy holding his hat, one piece"
         />
-
-        <Link href="/">
-          <button> GO HOME </button>
-        </Link>
       </main>
+      <footer>
+        <Link href="/">
+          <p> GO TO MAIN PAGE </p>
+        </Link>
+      </footer>
     </div>
   );
 };

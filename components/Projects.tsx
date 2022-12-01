@@ -1,7 +1,7 @@
 import ProjectsSection from "./ProjectsSection";
-import { ReactComponentElement } from "react";
+import { ReactComponentElement, useEffect } from "react";
 
-import ShowCaseBox from "./ShowcaseBox"
+import ShowCaseBox from "./ShowcaseBox";
 
 interface ProjectsSection {
   title: string;
@@ -88,7 +88,17 @@ const allSections: Array<ProjectsSection> = [
     },
   },
   {
-    title: "New Section",
+    title: "AI (to come...)",
+    fetchProjectsFunc: () => {
+      return (
+        <ul>
+          <li>XD2</li>
+        </ul>
+      );
+    },
+  },
+  {
+    title: "Phone Apps (to come...)",
     fetchProjectsFunc: () => {
       return (
         <ul>
@@ -99,19 +109,23 @@ const allSections: Array<ProjectsSection> = [
   },
 ];
 
-export default function Projects(): JSX.Element {
+export default function Projects({ projects }: any): JSX.Element {
+  useEffect(() => {
+    console.log("VALUE RECIEVED")
+    console.log(projects);
+    console.log("---------------")
+  }, []);
   return (
     <section>
-      {allSections.map((section: ProjectsSection) => {
+      {allSections.map((section: ProjectsSection, id: number) => {
         return (
           <ProjectsSection
+            key={id}
             title={section.title}
-            fetchProjectsFunc={section.fetchProjectsFunc}
+            projectsData={projects}
           />
         );
       })}
-      <h2 className="h1-projects-main"> {"(To come...)"} </h2>
-      <h2 className="h1-projects-main">AI && PHONE APPS</h2>
     </section>
   );
 }

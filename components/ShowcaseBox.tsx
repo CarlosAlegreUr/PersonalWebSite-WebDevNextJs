@@ -1,12 +1,20 @@
 import Image from "next/image";
 
-export default function ShowCaseBox(props: any) : JSX.Element{
+export default function ShowCaseBox(props: any): JSX.Element {
   return (
     <div className="grow rounded-3xl bg-black text-center w-1/6 showcase-box">
-      <br/>
-      <Image className="showcase-image" src={props.image} alt={props.imageAlt} width={200} height={200}/>
-      <h3> {props.title} </h3>
-      <br/>
+      <br />
+      <Image
+        className="showcase-image"
+        src={props.image}
+        alt={props.imageAlt}
+        width={200}
+        height={200}
+      />
+      <a href={props.url} target="_blank">
+        <h3> {props.title} </h3>
+      </a>
+      <br />
       <p className="text-center"> {props.description} </p>
     </div>
   );

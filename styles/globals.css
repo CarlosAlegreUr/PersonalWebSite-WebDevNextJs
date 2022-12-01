@@ -24,7 +24,7 @@ header {
   font-weight: bold;
   font-size: 5rem;
   color: rgb(214, 10, 10);
-  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 156, 15), black);
+  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 145, 15), rgb(244, 145, 15), rgb(244, 156, 15), black);
   border-radius: 75rem;
   text-align: center;
   display: block;
@@ -54,6 +54,7 @@ footer {
   border-radius: 12em 12em 0em 12em;
   border-color: rgba(255, 0, 0, 0.705);
   border-width: 0.1rem;
+  cursor: pointer;
 }
 
 button {

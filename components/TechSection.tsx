@@ -16,8 +16,8 @@ export default function TechSection({ name, listOfItems }: propsUsed) {
       <h2 className="main-h2">{name}</h2>
       <br />
       <ul className="techs-list">
-        {listOfItems.map((element) => {
-          return <TechItem name={element.name} icon={element.icon} />;
+        {listOfItems.map((element, id : number) => {
+          return <TechItem key={id} name={element.name} icon={element.icon} />;
         })}
       </ul>
       <br />

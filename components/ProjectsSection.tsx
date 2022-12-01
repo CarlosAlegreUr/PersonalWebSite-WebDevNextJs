@@ -1,13 +1,15 @@
 import { ReactComponentElement, useState } from "react";
+import ShowCaseBox from "./ShowcaseBox";
 
 interface usedProps {
   title: string;
-  fetchProjectsFunc: () => ReactComponentElement<"ul">;
+  projectsData: object;
+  // fetchProjectsFunc: () => ReactComponentElement<"ul">;
 }
 
 export default function Projects({
   title,
-  fetchProjectsFunc,
+  projectsData,
 }: usedProps): JSX.Element {
   const [displayProjects, setDisplayProjects] = useState(true);
   return (
@@ -24,7 +26,28 @@ export default function Projects({
           <p>HIDE</p>
         </div>
       </div>
-      {displayProjects && fetchProjectsFunc()}
+      {displayProjects && createGridFromProjectsData(projectsData)}
     </section>
+  );
+}
+
+function createGridFromProjectsData(projectsData: any) {
+  return (
+    <ul className="projects-list">
+      <li>
+        {projectsData.map((project: any, id: number) => {
+          return (
+            <ShowCaseBox
+              key={id}
+              title={project.name}
+              description={project.description}
+              image="/../public/images/my_face.jpg"
+              url={project.url}
+              imageAlt="One of the cooler projects, click to go github repository"
+            />
+          );
+        })}
+      </li>
+    </ul>
   );
 }

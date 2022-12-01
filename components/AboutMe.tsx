@@ -2,18 +2,19 @@ import Link from "next/link";
 import MyPhoto from "./MyPhoto";
 import SocialMediaNav from "./SocialMediaNav";
 
-export default function AboutMe(){
+export default function AboutMe() {
   return (
-    <div className="lef-padding">
+    <section className="about-me-section">
       <MyPhoto />
-      <p> e-mail {":=>"} calegreu@gmail.com</p>
+      <br />
+      <hr/>
+      <p> e-mail : calegreu@gmail.com</p>
+      <hr/>
+      <br />
       <SocialMediaNav />
       <Link href="/me">
-        <a>
-          {" "}
-          <button> More about me... </button>
-        </a>
+        <button> More about me... </button>
       </Link>
-    </div>
+    </section>
   );
 }

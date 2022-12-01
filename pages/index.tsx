@@ -59,16 +59,16 @@ const Home: NextPage = () => {
           Activate 3D animation {"(todo...)"}
         </button>
 
-        <div className="flex main-flex-div">
+        <section className="main-section">
           <AboutMe />
 
-          <div className="showcase-padding occupy-all">
+          <div className="content-showing-section">
             {displayElement[0] && <Projects />}
             {displayElement[1] && <MyBusinesses />}
             {displayElement[2] && <TechnologiesList />}
           </div>
 
-          <div className="block">
+          <div className="buttons-div">
             <button
               onClick={() => {
                 dispatch({ type: "projects" });
@@ -91,10 +91,10 @@ const Home: NextPage = () => {
               }}
             >
               {" "}
-              TECHNOLOGIES I'VE TRIED/USED{" "}
+              TECHNOLOGIES TRIED/USED{" "}
             </button>
           </div>
-        </div>
+        </section>
       </main>
       <footer> GO BACK TO THE TOP </footer>
     </>

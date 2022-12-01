@@ -14,7 +14,7 @@ const Me: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="main-header fixed"> Personal Likes </header>
+      <header className="main-header fixed"> Personal Interests </header>
       <main className={styles.main}>
         <ShowcaseBox
           title="Healthy lifestyle/Training"

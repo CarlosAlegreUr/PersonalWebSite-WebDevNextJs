@@ -1,6 +1,8 @@
 import ProjectsSection from "./ProjectsSection";
 import { ReactComponentElement } from "react";
 
+import ShowCaseBox from "./ShowcaseBox"
+
 interface ProjectsSection {
   title: string;
   fetchProjectsFunc: () => ReactComponentElement<"ul">;
@@ -12,8 +14,55 @@ const allSections: Array<ProjectsSection> = [
     title: "Cooler Projects",
     fetchProjectsFunc: () => {
       return (
-        <ul>
-          <li>XDFFF</li>
+        <ul className="projects-list">
+          <li>
+            <ShowCaseBox
+              title="FairTaxesAnalytics"
+              description="No cap"
+              image="/../public/images/my_face.jpg"
+              imageAlt="An NFT from the collection"
+            />
+          </li>
+          <li>
+            <ShowCaseBox
+              title="Gaimon&You"
+              description="No cap in my caption"
+              image="/../public/images/my_face.jpg"
+              imageAlt="An NFT from the collection"
+            />
+          </li>
+          <li className="project-element">
+            <ShowCaseBox
+              title="This page! :D"
+              description="No cap in my caption got a little booty eqweqweqweqweqweqweqwe"
+              image="/../public/images/my_face.jpg"
+              imageAlt="An NFT from the collection"
+            />
+          </li>
+          <li>
+            <ShowCaseBox
+              title="FairTaxesAnalytics"
+              description="No cap"
+              image="/../public/images/my_face.jpg"
+              imageAlt="An NFT from the collection"
+            />
+          </li>
+          <li>
+            <ShowCaseBox
+              title="Gaimon&You"
+              description="No cap in my caption"
+              image="/../public/images/my_face.jpg"
+              imageAlt="An NFT from the collection"
+            />
+          </li>
+          <li>
+            <ShowCaseBox
+              title="This page! :D"
+              description="No cap in my caption"
+              image="/../public/images/my_face.jpg"
+              imageAlt="An NFT from the collection"
+            />
+          </li>
         </ul>
       );
     },
@@ -50,9 +99,9 @@ const allSections: Array<ProjectsSection> = [
   },
 ];
 
-export default function Projects() : JSX.Element {
+export default function Projects(): JSX.Element {
   return (
-    <main className="">
+    <section>
       {allSections.map((section: ProjectsSection) => {
         return (
           <ProjectsSection
@@ -63,6 +112,6 @@ export default function Projects() : JSX.Element {
       })}
       <h2 className="h1-projects-main"> {"(To come...)"} </h2>
       <h2 className="h1-projects-main">AI && PHONE APPS</h2>
-    </main>
+    </section>
   );
 }

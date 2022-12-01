@@ -22,7 +22,7 @@ body {
   color: white;
 }
 
-.main-header {
+header {
   position: relative;
   font-family: Spaced, Verdana, Geneva;
   font-style: italic;
@@ -81,24 +81,59 @@ button {
   }
 }
 
-.grow{
-  transition: .5s, color .10s;
-      -webkit-transition: .5s, color .10s;
-      -moz-transition: .5s, color .10s;
+.main-section {
+  display: flex;
+  padding: 0rem 5rem;
+}
 
-  &:hover{
-    transform: scale3d(1.5, 1.5, 0.3);
-    -webkit-transform: scale3d(1.5, 1.5, 0.3);
-    -moz-transform: scale3d(1.5, 1.5, 0.3);
+.about-me-section {
+  padding: 3em 2em 2em 2em;
+}
+
+.image-and-caption-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.social-media-nav {
+  columns: 2;
+}
+
+.content-showing-section {
+  width: 250em;
+  display: flex;
+  justify-content: center;
+  padding: 0em 2em 2em 2em;
+}
+
+.project-section-div {
+  display: flex;
+  gap: 1em;
+  h1{
+    width: 100%;
+    font-size: 2.5em;
+    text-shadow: 0.1rem 0.1rem;
+    text-align: center;
+    color: yellow;
   }
 }
 
-.h1-projects-main {
-  width: 25rem;
-  font-size: 2.5em;
-  text-shadow: 0.1rem 0.1rem;
-  color: yellow;
-  margin: 1em 0em 0.75em 12em;
+.hide-checkbox-div {
+  display: flex;
+  align-items: center;
+  color: rgb(190, 190, 6);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.buttons-div{
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
 }
 
 .project-element {
@@ -118,38 +153,15 @@ button {
   font-family: Spaced, Verdana, Geneva;
 }
 
-.project-title-show-div{
-  display: flex;
-}
-
-.main-flex-div {
-  padding: 3rem 0.5rem;
-}
-
-.sizeXD {
+.my-photo {
   border-radius: 10rem 35rem 10rem 35rem;
   border-color: purple;
 }
 
-.about-me-div {
-  justify-content: center;
-  align-items: center;
-}
-
-.lef-padding {
-  padding: 7em 15em 0em 0em;
-  width: 40em;
-  height: 0.5em;
-}
-
 .button3d {
-  margin: 5em 0em 0em 2.3em;
+  display: block;
+  margin: 1.5em 0em 1.5em 2.3em;
   display: block0;
- 
-}
-
-.showcase-padding {
-  padding: 0rem 2rem 0rem 0rem;
 }
 
 .col2-showcase-box { 
@@ -180,6 +192,48 @@ button {
   p{
     font-size: large;
   }
+}
+
+.grow{
+  transition: .5s, color .10s;
+      -webkit-transition: .5s, color .10s;
+      -moz-transition: .5s, color .10s;
+
+  &:hover{
+    transform: scale3d(1.5, 1.5, 0.3);
+    -webkit-transform: scale3d(1.5, 1.5, 0.3);
+    -moz-transform: scale3d(1.5, 1.5, 0.3);
+  }
+}
+
+.main-h1{
+  width: 100%;
+  font-size: 2.5em;
+  text-shadow: 0.1rem 0.1rem;
+  text-align: center;
+  color: yellow;
+}
+
+.main-h2{
+  width: 100%;
+  font-size: 1.8em;
+  text-shadow: 0.1rem 0.1rem;
+  text-align: center;
+  color: yellow;
+}
+
+.tech-item{
+  text-align: center;
+  font-size: x-large;
+}
+
+.techs-list {
+  columns: 2;
+}
+
+.fill-showcase {
+  width: 70%;
+  margin: 0em 0em 0em 7em;
 }
 
 a {

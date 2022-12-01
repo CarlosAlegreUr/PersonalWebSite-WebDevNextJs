@@ -34,7 +34,7 @@ const socialMediaItemsToDisplay: Array<socialMediaItemParams> = [
 
 export default function SocialMediaNav() {
   return (
-    <nav className="px-2 sm:px-4 py-2.5">
+    <nav className="social-media-nav">
       <ul>
       {socialMediaItemsToDisplay.map((itemParams: socialMediaItemParams) => {
         return (

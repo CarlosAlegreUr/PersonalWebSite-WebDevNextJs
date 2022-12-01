@@ -2,21 +2,20 @@ import Image from "next/image";
 
 export default function MyPhoto() {
   return (
-    <div className="about-me-div gap-2">
+    <div className="image-and-caption-div">
       <Image
-        className="sizeXD"
+        className="my-photo"
         src="/images/my_face.jpg"
         width={"150"}
-        height={"350"}
+        height={"250"}
         alt="image of developer's face"
+        title="Computers"
       />
-      <div className="text-xl text-center">
-        <p>+ Self-taught</p>
-        <p>
-          + 2 years of Informatics Engineering at Autonomous University of
-          Barcelona
-        </p>
-      </div>
+      <p>+ Self-taught</p>
+      <p>
+        + 2 years of Informatics Engineering at Autonomous University of
+        Barcelona
+      </p>
     </div>
   );
 }

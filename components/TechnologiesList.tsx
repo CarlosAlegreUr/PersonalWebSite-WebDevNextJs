@@ -1,35 +1,38 @@
+import TechSection from "./TechSection";
+
+type techItem = {
+  name: string;
+  icon: string;
+};
+
+const listOfProgramingLanguages: Array<techItem> = [
+  { name: "C", icon: "/images/clogo.webp" },
+  { name: "C++", icon: "/images/c++.webp" },
+  { name: "Python", icon: "/images/pythonlogo.png" },
+  { name: "Solidity", icon: "/images/soliditylogo.webp" },
+  { name: "HTML", icon: "/images/htmllogo.webp" },
+  { name: "CSS", icon: "/images/csslogo.webp" },
+  { name: "SASS", icon: "/images/sasslogo.webp" },
+  { name: "JavaScript / NodeJS", icon: "/images/jslogo.webp" },
+  { name: "TypeScript", icon: "/images/tslogo.webp" },
+  { name: "R", icon: "/images/rlogo.webp" },
+  { name: "Linux Bash", icon: "/images/bashlogo.webp" },
+  { name: "Assembly x86", icon: "/images/asmlogo.webp" },
+];
+
 export default function TechnologiesList() {
   return (
-    <div className="flex-row ">
+    <main className="fill-showcase">
       <hr />
-      <h1> Technologies I've used: </h1>
-      <ul>
-        <li>
-          Programming/Coding Languages
-          <ul>
-            <li>Solidity</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Linux Bash</li>
-            <li>R</li>
-            <li>Assembly x86</li>
-          </ul>
-        </li>
-        <li>
-          Frameworks
-          <ul>
-            <li>React</li>
-            <li>NextJs</li>
-            <li>Laravel</li>
-            <li>Hardhat</li>
-          </ul>
-        </li>
-      </ul>
+      <h1 className="main-h1"> Technologies I've tried/used </h1>
       <hr />
-    </div>
+      <br />
+      <TechSection
+        name="Programming/Coding Languages"
+        listOfItems={listOfProgramingLanguages}
+      />
+      <TechSection name="Frameworks" listOfItems={listOfProgramingLanguages} />
+      <TechSection name="Libraries" listOfItems={listOfProgramingLanguages} />
+    </main>
   );
 }

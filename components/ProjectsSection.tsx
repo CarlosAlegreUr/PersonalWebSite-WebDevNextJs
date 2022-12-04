@@ -1,10 +1,9 @@
-import { ReactComponentElement, useState } from "react";
+import { useState } from "react";
 import ShowCaseBox from "./ShowcaseBox";
 
 interface usedProps {
   title: string;
-  projectsData: object;
-  // fetchProjectsFunc: () => ReactComponentElement<"ul">;
+  projectsData: any;
 }
 
 export default function Projects({
@@ -15,18 +14,24 @@ export default function Projects({
   return (
     <section>
       <div className="project-section-div">
-        <h1> {title} </h1>
-        <div className="hide-checkbox-div">
-          <input
-            type="checkbox"
-            onChange={() => {
-              setDisplayProjects(!displayProjects);
-            }}
-          ></input>
-          <p>HIDE</p>
-        </div>
+        <h1>
+          {!(projectsData.projects.length === 0)
+            ? title
+            : title.concat(" (TO COME...)")}{" "}
+        </h1>
+        {!(projectsData.projects.length === 0) && (
+          <div className="hide-checkbox-div">
+            <input
+              type="checkbox"
+              onChange={() => {
+                setDisplayProjects(!displayProjects);
+              }}
+            ></input>
+            <p>HIDE</p>
+          </div>
+        )}
       </div>
-      {displayProjects && createGridFromProjectsData(projectsData)}
+      {displayProjects && createGridFromProjectsData(projectsData.projects)}
     </section>
   );
 }
@@ -43,7 +48,7 @@ function createGridFromProjectsData(projectsData: any) {
               description={project.description}
               image="/../public/images/my_face.jpg"
               url={project.url}
-              imageAlt="One of the cooler projects, click to go github repository"
+              imageAlt="One of developer's github projects, click to go github repository"
             />
           );
         })}

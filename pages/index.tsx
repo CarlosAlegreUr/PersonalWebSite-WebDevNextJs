@@ -37,7 +37,9 @@ function displayReducer(
   return [...state];
 }
 
-const Home: NextPage = ({ githubPinnedProjects }: any) => {
+const Home: NextPage = ({
+  sortedProjects
+}: any) => {
   const [displayElement, dispatch] = useReducer(displayReducer, [
     true,
     false,
@@ -71,7 +73,7 @@ const Home: NextPage = ({ githubPinnedProjects }: any) => {
           <AboutMe />
 
           <div className="content-showing-section">
-            {displayElement[0] && <Projects projects={githubPinnedProjects} />}
+            {displayElement[0] && <Projects projects={sortedProjects} />}
             {displayElement[1] && <MyBusinesses />}
             {displayElement[2] && <TechnologiesList />}
           </div>
@@ -186,6 +188,8 @@ export const getStaticProps = async () => {
                 ... on Repository {
                   id
                   name
+                  description
+                  url
                   repositoryTopics(first: 10) {
                     edges {
                       node {
@@ -204,30 +208,38 @@ export const getStaticProps = async () => {
     `,
   });
 
-  // const allRepos : any = query.data;
-  // const webRepos = await filterByTopic("web", allRepos);
-  // const web3Repos = await filterByTopic("web3", allRepos);
-  // const aiRepos = await filterByTopic("AI", allRepos);
-  // const phoneAppsRepos = await filterByTopic("phoneApp", allRepos);
-
-  const webRepos =null
-  const web3Repos=null
-  const aiRepos =null
-  const phoneAppsRepos = null
+  const allRepos: any = query.data.user.pinnableItems.edges;
+  const webRepos = await filterByTopic("web", allRepos);
+  const web3Repos = await filterByTopic("web3", allRepos);
+  const aiRepos = await filterByTopic("AI", allRepos);
+  const phoneAppsRepos = await filterByTopic("phoneApp", allRepos);
 
   const { user } = data;
   const pinnedItems = user.pinnedItems.edges.map(({ node }: any) => node);
 
+  const sortedProjects = {
+    githubPinnedProjects: pinnedItems,
+    githubWebProjects: webRepos,
+    githubWeb3Projects: web3Repos,
+    githubAiProjects: aiRepos,
+    githubPhoneAppsProjects: phoneAppsRepos,
+  };
+
   return {
     props: {
-      githubPinnedProjects: pinnedItems,
-      githubWebProjects: webRepos,
-      githubWeb3Projects: web3Repos,
-      githubAiProjects: aiRepos,
-      githubPhoneAppsProjects: phoneAppsRepos,
+      sortedProjects,
     },
-    revalidate: 3600,
+    revalidate: 648000,
   };
 };
 
-function filterByTopic(topic : string, allRepos : any) {}
+function filterByTopic(topic: string, allRepos: Array<any>) {
+  const filtered = allRepos.filter(({ node }) => {
+    let belongsToTopic = false;
+    node.repositoryTopics.edges.forEach((element: any) => {
+      if (element.node.topic.name === topic) belongsToTopic = true;
+    });
+    return belongsToTopic;
+  });
+  return filtered.map((repository)=>repository.node);
+}

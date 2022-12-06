@@ -17,6 +17,7 @@ import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import MyBusinesses from "../components/MyBusinesses";
 import TechnologiesList from "../components/TechnologiesList";
+import BackToTopButton from "../components/BackToTopButton";
 
 interface actionType {
   type: string;
@@ -37,14 +38,13 @@ function displayReducer(
   return [...state];
 }
 
-const Home: NextPage = ({
-  sortedProjects
-}: any) => {
+const Home: NextPage = ({ sortedProjects }: any) => {
   const [displayElement, dispatch] = useReducer(displayReducer, [
     true,
     false,
     false,
   ]);
+
   return (
     <>
       <Head>
@@ -72,6 +72,15 @@ const Home: NextPage = ({
         <section className="main-section">
           <AboutMe />
 
+          {/* This part of the component could be more generalized creating a MiddleSectionDiv
+          component in order to easily add and display as many different categories of projects as 
+          you want.
+          
+          Since this is just a personal web and this is enough and won't escalate further, 
+          I'm not gonna overenginner the code here.
+          
+          Though I've used this pattern inside the elements displayed because who know how many
+          project or businesses or technologies I will have to display in the future. :D */}
           <div className="content-showing-section">
             {displayElement[0] && <Projects projects={sortedProjects} />}
             {displayElement[1] && <MyBusinesses />}
@@ -104,9 +113,11 @@ const Home: NextPage = ({
               TECHNOLOGIES TRIED/USED{" "}
             </button>
           </div>
+
+          <BackToTopButton />
         </section>
       </main>
-      <footer> GO BACK TO THE TOP </footer>
+      <footer> Carlos Alegre's Web </footer>
     </>
   );
 };
@@ -241,5 +252,5 @@ function filterByTopic(topic: string, allRepos: Array<any>) {
     });
     return belongsToTopic;
   });
-  return filtered.map((repository)=>repository.node);
+  return filtered.map((repository) => repository.node);
 }

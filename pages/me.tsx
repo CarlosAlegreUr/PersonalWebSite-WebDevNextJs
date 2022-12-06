@@ -19,21 +19,21 @@ const Me: NextPage = () => {
         <ShowcaseBox
           title="Healthy lifestyle/Training"
           description={description_healthyLifeStyleGym}
-          image="/../public/images/calisthenics.jpg"
+          image="/images/likes-images/calisthenics.jpg"
           imageAlt="The developer showing his trainned boddy"
         />
         <div className="flex justify-center space-x-96 my-20">
           <ShowcaseBox
             title="Maths"
             description={description_maths}
-            image="/../public/images/maths.jpg"
+            image="/images/likes-images/maths.jpg"
             imageAlt="Maths"
           />
 
           <ShowcaseBox
             title="Freedom"
             description={description_freedom}
-            image="/../public/images/freedom.jpg"
+            image="/images/likes-images/freedom.jpg"
             imageAlt="Freedom representation"
           />
         </div>
@@ -42,14 +42,14 @@ const Me: NextPage = () => {
           <ShowcaseBox
             title="Philosophize"
             description={description_philosophy}
-            image="/../public/images/philosophize.jpg"
+            image="/images/likes-images/philosophize.jpg"
             imageAlt="Greek statue"
           />
 
           <ShowcaseBox
             title="Party / Dance / Piano"
             description={description_partyAndDance}
-            image="/../public/images/party.jpg"
+            image="/images/likes-images/party.jpg"
             imageAlt="A party"
           />
         </div>
@@ -57,11 +57,11 @@ const Me: NextPage = () => {
         <ShowcaseBox
           title="OnePiece"
           description={description_onePiece}
-          image="/../public/images/onepiece.jpg"
+          image="/images/likes-images/onepiece.jpg"
           imageAlt="Luffy holding his hat, one piece"
         />
       </main>
-      <footer>
+      <footer className="fixed-bottom-button">
         <Link href="/">
           <p> GO TO MAIN PAGE </p>
         </Link>

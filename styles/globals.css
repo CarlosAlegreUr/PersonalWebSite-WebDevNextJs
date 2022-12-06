@@ -23,7 +23,7 @@ header {
   font-style: italic;
   font-weight: bold;
   font-size: 5rem;
-  color: rgb(214, 10, 10);
+  color: rgba(214, 10, 10, 0.84);
   background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 145, 15), rgb(244, 145, 15), rgb(244, 156, 15), black);
   border-radius: 75rem;
   text-align: center;
@@ -50,7 +50,8 @@ main {
   left: 50%;
   z-index: 3;
   font-family: Spaceman, Verdana, Geneva;
-  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 156, 15), black);
+  color: rgba(244, 239, 239, 0.946);
+  background: -webkit-linear-gradient(right, black, rgba(244, 99, 15, 0.84), rgba(244, 145, 15, 0.84), rgba(244, 156, 15, 0.84), black);
   border-radius: 12em 12em 0em 12em;
   border-color: rgba(255, 0, 0, 0.705);
   border-width: 0.1rem;
@@ -59,8 +60,8 @@ main {
 
 button {
   font-family: Spaceman, Verdana, Geneva;
-  background-color: rgb(247, 6, 6);
-  color: rgba(12, 12, 12, 0.742);
+  background-color: rgba(243, 34, 34, 0.84);
+  color: rgb(12, 12, 12);
   border-color: rgb(247, 123, 28);
   border-radius: 0.5rem;
   border-width: 0.25rem;
@@ -70,7 +71,7 @@ button:hover {
   background-color: rgba(255, 166, 0, 0.875);
   transition-duration: 0.45s;
   color: black;
-  border-color: rgb(255, 0, 255);
+  border-color: rgb(135, 0, 88);
 }
 button:active {
   opacity: 75%;
@@ -114,9 +115,9 @@ button:active {
 .project-section-div h1 {
   width: 100%;
   font-size: 2.5em;
-  text-shadow: 0.1rem 0.1rem;
+  text-shadow: 0.08rem 0.08rem;
   text-align: center;
-  color: yellow;
+  color: rgba(255, 255, 0, 0.84);
 }
 
 .hide-checkbox-div {
@@ -198,25 +199,30 @@ button:active {
   -moz-transition: 0.5s, color 0.1s;
 }
 .grow:hover {
+  position: relative;
   transform: scale3d(1.5, 1.5, 0.3);
   -webkit-transform: scale3d(1.5, 1.5, 0.3);
   -moz-transform: scale3d(1.5, 1.5, 0.3);
+  background: -webkit-linear-gradient(top, rgb(244, 166, 0), rgba(255, 255, 255, 0.446), rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.897));
+  border-color: rgb(135, 0, 88);
+  border-width: 0.2em;
+  z-index: 1;
 }
 
 .main-h1 {
   width: 100%;
   font-size: 2.5em;
-  text-shadow: 0.1rem 0.1rem;
+  text-shadow: 0.08rem 0.08rem;
   text-align: center;
-  color: yellow;
+  color: rgb(255, 255, 0);
 }
 
 .main-h2 {
   width: 100%;
   font-size: 1.8em;
-  text-shadow: 0.1rem 0.1rem;
+  text-shadow: 0.08rem 0.08rem;
   text-align: center;
-  color: yellow;
+  color: rgb(255, 255, 0);
 }
 
 .tech-item {

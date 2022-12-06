@@ -57,7 +57,7 @@ const Home: NextPage = ({ sortedProjects }: any) => {
       </Head>
       <header className="main-header"> Carlos Alegre's portfiolio</header>
       <div className="video-div">
-        <video autoPlay loop muted src="./videos/stars.mp4" />
+        <video autoPlay loop muted src="/videos/stars.mp4" />
       </div>
       <main className="block space-font">
         <button

@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Personal Portfolio's web
 
-## Getting Started
+Pretty self-explanatory, a website that displays in a cute way all my projects. Also contains a little page with more about me as a person. 😊 
 
-First, run the development server:
+Let's get a job or start my own! 🚀🚀🚀
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Tools Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build with NextJs and Yarn.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+All dependencies:
++ next
++ react
++ react-dom
++ @apollo/client 
++ @types/node
++ @types/react
++ @types/react-dom
++ autoprefixer
++ eslint
++ eslint-config-next
++ graphql 
++ postcss
++ prettier
++ typescript
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## TODO LIST:
 
-## Learn More
+    1.- Pass all files to proper TypeScript. Change all any types with interfaces, types...
+    (https://www.youtube.com/watch?v=qFMMOJucqTw)
+    (https://www.youtube.com/watch?v=v-a7-w8preU)
 
-To learn more about Next.js, take a look at the following resources:
+    2.- Finish and refactor SASS code.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    3.- Find one extra typography to display text that accepts lower-case.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    4.- Check out Apollo-warning when building app.
 
-## Deploy on Vercel
+    5.- Find and organize all images. (Change to free license images for technologies section)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    6.- Finish Me page.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    7.- Use Three.js to 3D animate the page.
+
+    8.-Finish and refactor MyBusiness section and TechsIveUsed section.
+
+    9.- Checkout SEO html tags.
+
+    10.- Deploy web.
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

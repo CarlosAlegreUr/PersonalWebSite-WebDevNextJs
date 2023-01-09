@@ -9,6 +9,14 @@
   font-family: "Spaced";
   src: url("../fonts/spaced-otf.otf");
 }
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "SpaceGroteskSemiBold";
+  src: url("../fonts/SpaceGrotesk-SemiBold.ttf");
+}
 html,
 body {
   font-family: Spaceman, Spaced, Verdana, Geneva;
@@ -23,8 +31,9 @@ header {
   font-style: italic;
   font-weight: bold;
   font-size: 5rem;
-  color: rgba(214, 10, 10, 0.84);
-  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 145, 15), rgb(244, 145, 15), rgb(244, 156, 15), black);
+  color: rgb(193, 13, 13);
+  text-shadow: 0.1rem 0.1rem;
+  background: -webkit-radial-gradient(circle, rgba(255, 166, 48, 0.8), rgba(255, 166, 48, 0.8), rgba(244, 156, 15, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   border-radius: 75rem;
   text-align: center;
   display: block;
@@ -141,17 +150,6 @@ button:active {
   height: fit-content;
 }
 
-.projects-list {
-  color: yellow;
-  text-align: center;
-  -moz-columns: 2;
-       columns: 2;
-  width: 75em;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
 .space-font {
   font-family: Spaced, Verdana, Geneva;
 }
@@ -174,7 +172,7 @@ button:active {
 }
 
 .showcase-box {
-  font-family: Spaced, Verdana, Geneva;
+  font-family: SpaceGrotesk, Spaced, Verdana, Geneva;
   background: -webkit-linear-gradient(top, rgb(193, 13, 13), rgba(255, 255, 255, 0.446), rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.897));
   color: rgba(12, 12, 12, 0.742);
   width: 20em;
@@ -191,6 +189,9 @@ button:active {
 }
 .showcase-box p {
   font-size: large;
+}
+.showcase-box h3 {
+  font-family: SpaceGroteskSemiBold, Spaced, Verdana, Geneva;
 }
 
 .grow {

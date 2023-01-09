@@ -3,16 +3,30 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Spaceman';
+  font-family: "Spaceman";
   src: url("../fonts/SPACEMAN.TTF");
 }
 
 @font-face {
-  font-family: 'Spaced';
+  font-family: "Spaced";
   src: url("../fonts/spaced-otf.otf");
 }
 
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "SpaceGroteskSemiBold";
+  src: url("../fonts/SpaceGrotesk-SemiBold.ttf");
+}
+
 $showcase-box-col-num: 2;
+$original-orange: rgb(244, 99, 15, 0.75);
+$red-header: rgb(45, 8, 10);
+$fitst-orange: rgb(244, 145, 15, 1);
+$new-orange: rgb(255, 166, 48, 0.8);
 
 html,
 body {
@@ -28,8 +42,16 @@ header {
   font-style: italic;
   font-weight: bold;
   font-size: 5rem;
-  color: rgba(214, 10, 10, 0.84);
-  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15), rgb(244, 145, 15), rgb(244, 145, 15),  rgb(244, 145, 15), rgb(244, 156, 15), black);
+  color: rgb(193, 13, 13);
+  text-shadow: 0.1rem 0.1rem;
+  background: -webkit-radial-gradient(
+    circle,
+    $new-orange,
+    $new-orange,
+    rgb(244, 156, 15, 0.5),
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 0)
+  );
   border-radius: 75rem;
   text-align: center;
   display: block;
@@ -52,11 +74,18 @@ main {
 .fixed-bottom-button {
   position: fixed;
   bottom: 0;
-  left: 50%; 
+  left: 50%;
   z-index: 3;
   font-family: Spaceman, Verdana, Geneva;
   color: rgba(244, 239, 239, 0.946);
-  background: -webkit-linear-gradient(right, black, rgb(244, 99, 15, 0.84), rgb(244, 145, 15, 0.84), rgb(244, 156, 15, 0.84), black);
+  background: -webkit-linear-gradient(
+    right,
+    black,
+    rgb(244, 99, 15, 0.84),
+    rgb(244, 145, 15, 0.84),
+    rgb(244, 156, 15, 0.84),
+    black
+  );
   border-radius: 12em 12em 0em 12em;
   border-color: rgba(255, 0, 0, 0.705);
   border-width: 0.1rem;
@@ -65,7 +94,7 @@ main {
 
 button {
   font-family: Spaceman, Verdana, Geneva;
-  background-color:  rgba(243, 34, 34, 0.84);
+  background-color: rgba(243, 34, 34, 0.84);
   color: rgb(12, 12, 12);
   border-color: rgb(247, 123, 28);
   border-radius: 0.5rem;
@@ -115,7 +144,7 @@ button {
 .project-section-div {
   display: flex;
   gap: 1em;
-  h1{
+  h1 {
     width: 100%;
     font-size: 2.5em;
     text-shadow: 0.08rem 0.08rem;
@@ -132,7 +161,7 @@ button {
   font-style: italic;
 }
 
-.buttons-div{
+.buttons-div {
   display: flex;
   flex-direction: column;
   padding: 3em;
@@ -140,15 +169,7 @@ button {
 
 .project-element {
   width: 2rem;
-  height:fit-content;
-}
-
-.projects-list{
-  color: yellow;
-  text-align: center;
-  columns: 2;
-  width: 75em;
-  height: max-content;
+  height: fit-content;
 }
 
 .space-font {
@@ -166,16 +187,21 @@ button {
   display: block0;
 }
 
-.col2-showcase-box { 
+.col2-showcase-box {
   background: -webkit-linear-gradient(right, rgb(3, 63, 175), rgb(134, 11, 165));
   color: yellow;
   padding: 0rem 2rem 0rem 0rem;
-
 }
 
 .showcase-box {
-  font-family: Spaced, Verdana, Geneva;
-  background: -webkit-linear-gradient(top, rgb(193, 13, 13), rgba(255, 255, 255, 0.446), rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.897));
+  font-family: SpaceGrotesk, Spaced, Verdana, Geneva;
+  background: -webkit-linear-gradient(
+    top,
+    rgb(193, 13, 13),
+    rgba(255, 255, 255, 0.446),
+    rgba(255, 255, 255, 0.88),
+    rgba(255, 255, 255, 0.897)
+  );
   color: rgba(12, 12, 12, 0.742);
   width: 20em;
   border-radius: 7em 7em 2em 2em;
@@ -187,33 +213,43 @@ button {
     text-shadow: 1em 1em 1em 4em;
   }
 
-  .showcase-image{
+  .showcase-image {
     border-radius: 7em 7em 2em 2em;
   }
 
-  p{
+  p {
     font-size: large;
+  }
+
+  h3 {
+    font-family: SpaceGroteskSemiBold, Spaced, Verdana, Geneva;
   }
 }
 
-.grow{
-  transition: .5s, color .10s;
-      -webkit-transition: .5s, color .10s;
-      -moz-transition: .5s, color .10s;
+.grow {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 
-  &:hover{
+  &:hover {
     position: relative;
     transform: scale3d(1.5, 1.5, 0.3);
     -webkit-transform: scale3d(1.5, 1.5, 0.3);
     -moz-transform: scale3d(1.5, 1.5, 0.3);
-    background: -webkit-linear-gradient(top, rgb(244, 166, 0), rgba(255, 255, 255, 0.446), rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.897));
+    background: -webkit-linear-gradient(
+      top,
+      rgb(244, 166, 0),
+      rgba(255, 255, 255, 0.446),
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.897)
+    );
     border-color: rgb(135, 0, 88);
     border-width: 0.2em;
     z-index: 1;
   }
 }
 
-.main-h1{
+.main-h1 {
   width: 100%;
   font-size: 2.5em;
   text-shadow: 0.08rem 0.08rem;
@@ -221,7 +257,7 @@ button {
   color: rgb(255, 255, 0);
 }
 
-.main-h2{
+.main-h2 {
   width: 100%;
   font-size: 1.8em;
   text-shadow: 0.08rem 0.08rem;
@@ -229,7 +265,7 @@ button {
   color: rgb(255, 255, 0);
 }
 
-.tech-item{
+.tech-item {
   text-align: center;
   font-size: x-large;
 }

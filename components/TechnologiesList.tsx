@@ -25,7 +25,7 @@ export default function TechnologiesList() {
   return (
     <main className="fill-showcase">
       <hr />
-      <h1 className="main-h1"> Technologies I've tried/used </h1>
+      <h1 className="main-h1"> Technologies I&apos;ve tried/used </h1>
       <hr />
       <br />
       <TechSection

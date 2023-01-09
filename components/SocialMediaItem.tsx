@@ -6,13 +6,14 @@ interface propsUsed {
   link: string;
 }
 
-export default function SocialMediaItem({ logo, socialMediaName, link }: propsUsed) {
+export default function SocialMediaItem({
+  logo,
+  socialMediaName,
+  link,
+}: propsUsed) {
   return (
     <li>
-      <a
-        href={link}
-        target="_blank"
-      >
+      <a href={link} target="_blank" rel="noreferrer">
         {socialMediaName}
         <Image
           className=""

@@ -11,7 +11,7 @@ export default function ShowCaseBox(props: any): JSX.Element {
         width={200}
         height={200}
       />
-      <a href={props.url} target="_blank">
+      <a href={props.url} target="_blank" rel="noreferrer">
         <h3> {props.title} </h3>
       </a>
       <br />

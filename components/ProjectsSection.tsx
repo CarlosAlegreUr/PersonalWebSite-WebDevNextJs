@@ -50,14 +50,14 @@ function createGridFromProjectsData(projectsData: any) {
         <tbody>
           {numOfRows.map((row: any, rowNum: number) => {
             return (
-              <tr>
+              <tr key={rowNum}>
                 {numOfCols.map((col: any, numOfCol: number) => {
                   if (totalAdded < projectsData.length) {
                     const totalPositionId =
                       numOfCol + rowNum * numOfCols.length;
                     totalAdded += 1;
                     return (
-                      <td>
+                      <td key={totalPositionId}>
                         <ShowCaseBox
                           key={totalPositionId}
                           title={projectsData[totalPositionId].name}

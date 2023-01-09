@@ -48,14 +48,14 @@ const Home: NextPage = ({ sortedProjects }: any) => {
   return (
     <>
       <Head>
-        <title>Carlos Alegre's Web</title>
+        <title>Carlos Alegre&apos;s Web</title>
         <meta
           name="Software Dev Web: Carlos Alegre Urquizú"
           content="Personal projects' web page of software engineer Carlos Alegre Urquizú"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="main-header"> Carlos Alegre's portfiolio</header>
+      <header className="main-header"> Carlos Alegre&apos;s portfiolio</header>
       <div className="video-div">
         <video autoPlay loop muted src="/videos/stars.mp4" />
       </div>
@@ -117,7 +117,7 @@ const Home: NextPage = ({ sortedProjects }: any) => {
           <BackToTopButton />
         </section>
       </main>
-      <footer> Carlos Alegre's Web </footer>
+      <footer> Carlos Alegre&apos;s Web </footer>
     </>
   );
 };

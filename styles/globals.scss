@@ -206,6 +206,7 @@ button {
   width: 20em;
   border-radius: 7em 7em 2em 2em;
   margin: 1em 10em;
+  text-align: center;
 
   h3 {
     font-size: x-large;
@@ -230,7 +231,7 @@ button {
   transition: 0.5s, color 0.1s;
   -webkit-transition: 0.5s, color 0.1s;
   -moz-transition: 0.5s, color 0.1s;
-
+  
   &:hover {
     position: relative;
     transform: scale3d(1.5, 1.5, 0.3);
@@ -277,6 +278,18 @@ button {
 .fill-showcase {
   width: 70%;
   margin: 0em 0em 0em 7em;
+}
+
+.me-page-display {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.main-index{
+  font-family: Spaced, Verdana, Geneva;
+  display: block;
 }
 
 a {

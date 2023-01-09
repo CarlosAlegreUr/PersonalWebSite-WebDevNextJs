@@ -2,7 +2,8 @@ import Image from "next/image";
 
 export default function ShowCaseBox(props: any): JSX.Element {
   return (
-    <div className="grow rounded-3xl bg-black text-center w-1/6 showcase-box">
+    // grow rounded-3xl bg-black text-center  showcase-box
+    <div className="grow showcase-box">
       <br />
       <Image
         className="showcase-image"

@@ -14,7 +14,7 @@ const Me: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="main-header fixed"> Personal Interests </header>
+      <header className="main-header"> Personal Interests </header>
       <main className={styles.main}>
         <ShowcaseBox
           title="Healthy lifestyle/Training"
@@ -22,7 +22,7 @@ const Me: NextPage = () => {
           image="/images/likes-images/calisthenics.jpg"
           imageAlt="The developer showing his trainned boddy"
         />
-        <div className="flex justify-center space-x-96 my-20">
+        <div className="me-page-display">
           <ShowcaseBox
             title="Maths"
             description={description_maths}
@@ -38,7 +38,7 @@ const Me: NextPage = () => {
           />
         </div>
 
-        <div className="flex justify-center space-x-96 my-20">
+        <div className="me-page-display">
           <ShowcaseBox
             title="Philosophize"
             description={description_philosophy}

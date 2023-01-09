@@ -178,6 +178,7 @@ button:active {
   width: 20em;
   border-radius: 7em 7em 2em 2em;
   margin: 1em 10em;
+  text-align: center;
 }
 .showcase-box h3 {
   font-size: x-large;
@@ -239,6 +240,18 @@ button:active {
 .fill-showcase {
   width: 70%;
   margin: 0em 0em 0em 7em;
+}
+
+.me-page-display {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.main-index {
+  font-family: Spaced, Verdana, Geneva;
+  display: block;
 }
 
 a {

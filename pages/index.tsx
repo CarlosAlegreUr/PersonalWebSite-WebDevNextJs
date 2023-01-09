@@ -59,7 +59,7 @@ const Home: NextPage = ({ sortedProjects }: any) => {
       <div className="video-div">
         <video autoPlay loop muted src="/videos/stars.mp4" />
       </div>
-      <main className="block space-font">
+      <main className="main-index">
         <button
           className="button3d"
           onClick={() => {

@@ -87,26 +87,26 @@ function mappingNameToImage(projects: any) {
     let image;
     switch (project.name) {
       case "BuddyFighters-FullstackWeb3NFTGame":
-        image = "/../public/images/projects-images/buddyFightersNFT.webp";
+        image = "/images/projects-images/buddyFightersNFT.webp";
         break;
       case "GaimonAndYou-FullstackClassicWebApp":
-        image = "/../public/images/projects-images/gaimon-and-you.webp";
+        image = "/images/projects-images/gaimon-and-you.webp";
         break;
       case "DataStructures-Algorithms-DesignPatterns":
         image =
-          "/../public/images/projects-images/data-structures-and-algo.webp";
+          "/images/projects-images/data-structures-and-algo.webp";
         break;
       case "InputControl-SmartContract-DesignPattern":
-        image = "/../public/images/projects-images/inputControl.webp";
+        image = "/images/projects-images/inputControl.webp";
         break;
       case "PersonalWebSite-WebDevNextJs":
-        image = "/../public/images/my_face.webp";
+        image = "/images/my_face.webp";
         break;
       case "FairTaxesAnalytics-WebDevReactJs":
-        image = "/../public/images/projects-images/FTA.webp";
+        image = "/images/projects-images/FTA.webp";
         break;
       default:
-        image = "/../public/images/default_image.webp";
+        image = "/images/default_image.webp";
         break;
     }
     return image;

@@ -1,28 +1,16 @@
-# My Personal Portfolio's web
+#  😊My Personal Web 😊
 
-Pretty self-explanatory, a website that displays in a cute way all my projects. Also contains a little page with more about me as a person. 😊 
+Pretty self-explanatory, a website that displays in a cute way all my projects and businesses.
 
-Let's get a job or start my own! 🚀🚀🚀
+It also contains a little page with more about me as a person. 🧐 
+
+Let's get a job or live by my own! 🚀🚀🚀
 
 ## Tools Used
 
 Build with NextJs and Yarn.
 
-All dependencies:
-+ next
-+ react
-+ react-dom
-+ @apollo/client 
-+ @types/node
-+ @types/react
-+ @types/react-dom
-+ autoprefixer
-+ eslint
-+ eslint-config-next
-+ graphql 
-+ postcss
-+ prettier
-+ typescript
+
 
 
 ## TODO LIST:
@@ -31,23 +19,13 @@ All dependencies:
     (https://www.youtube.com/watch?v=qFMMOJucqTw)
     (https://www.youtube.com/watch?v=v-a7-w8preU)
 
-    2.- Finish and refactor SASS code.
+    2.- Refactor SASS code, make it clean.
 
-    3.- Find one extra typography to display text that accepts lower-case.
+    3.- Use Three.js to 3D animate the page.
 
-    4.- Check out Apollo-warning when building app.
+    4.- Checkout SEO html tags.
 
-    5.- Find and organize all images. (Change to free license images for technologies section)
-
-    6.- Finish Me page.
-
-    7.- Use Three.js to 3D animate the page.
-
-    8.-Finish and refactor MyBusiness section and TechsIveUsed section.
-
-    9.- Checkout SEO html tags.
-
-    10.- Deploy web.
+    5.- Add loading image when loading times.
 
 
 ## License

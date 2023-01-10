@@ -38,7 +38,6 @@ export default function Projects({
 
 function createGridFromProjectsData(projectsData: any) {
   const images = mappingNameToImage(projectsData);
-  console.log(images);
   const rowsNum = Math.floor(projectsData.length / 2) + 1;
   const numOfRows = Array.from({ length: rowsNum }, () => 0);
   const numOfCols = [1, 2];
@@ -88,26 +87,26 @@ function mappingNameToImage(projects: any) {
     let image;
     switch (project.name) {
       case "BuddyFighters-FullstackWeb3NFTGame":
-        image = "/../public/images/projects-images/buddyFightersNFT.png";
+        image = "/../public/images/projects-images/buddyFightersNFT.webp";
         break;
       case "GaimonAndYou-FullstackClassicWebApp":
-        image = "/../public/images/projects-images/gaimon-and-you.png";
+        image = "/../public/images/projects-images/gaimon-and-you.webp";
         break;
       case "DataStructures-Algorithms-DesignPatterns":
         image =
-          "/../public/images/projects-images/data-structures-and-algo.jpg";
+          "/../public/images/projects-images/data-structures-and-algo.webp";
         break;
       case "InputControl-SmartContract-DesignPattern":
-        image = "/../public/images/projects-images/inputControl.png";
+        image = "/../public/images/projects-images/inputControl.webp";
         break;
       case "PersonalWebSite-WebDevNextJs":
-        image = "/../public/images/my_face.jpg";
+        image = "/../public/images/my_face.webp";
         break;
       case "FairTaxesAnalytics-WebDevReactJs":
-        image = "/../public/images/projects-images/FTA.jpg";
+        image = "/../public/images/projects-images/FTA.webp";
         break;
       default:
-        image = "/../public/images/default_image.jpg";
+        image = "/../public/images/default_image.webp";
         break;
     }
     return image;

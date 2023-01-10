@@ -5,7 +5,7 @@ export default function MyPhoto() {
     <div className="image-and-caption-div">
       <Image
         className="my-photo"
-        src="/images/my_face.jpg"
+        src="/images/my_face.webp"
         width={"150"}
         height={"250"}
         alt="image of developer's face"

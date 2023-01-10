@@ -34,6 +34,8 @@ body {
   background-color: aqua;
   background-image: url("../public/images/stars.jpg");
   color: white;
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -56,13 +58,18 @@ header {
   text-align: center;
   display: block;
   z-index: 2;
+
+  @media (max-width: 400px) {
+    width: 100vw;
+  }
 }
 
 .video-div {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
 }
 
@@ -115,10 +122,16 @@ button {
 .main-section {
   display: flex;
   padding: 0rem 5rem;
+  width: 105%;
 }
 
+// @media (max-width: 800px) {
+  // font-size: 1.5em;
+// }
+
 .about-me-section {
-  padding: 3em 2em 2em 2em;
+  margin: 3em 2em 2em 1em;
+  width: 15em;
 }
 
 .image-and-caption-div {
@@ -135,17 +148,17 @@ button {
 }
 
 .content-showing-section {
-  width: 250em;
+  width: 70%;
   display: flex;
   justify-content: center;
-  padding: 0em 2em 2em 2em;
+  margin: 0em 2em 2em 10em;
 }
 
 .project-section-div {
   display: flex;
-  gap: 1em;
+  width: 60em;
   h1 {
-    width: 100%;
+    width: 95%;
     font-size: 2.5em;
     text-shadow: 0.08rem 0.08rem;
     text-align: center;
@@ -155,6 +168,7 @@ button {
 
 .hide-checkbox-div {
   display: flex;
+  margin: 1.2em 0em 0em 0em;
   align-items: center;
   color: rgb(190, 190, 6);
   font-weight: bold;
@@ -162,9 +176,10 @@ button {
 }
 
 .buttons-div {
+  width: 20%;
   display: flex;
   flex-direction: column;
-  padding: 3em;
+  margin: 3em 5em 3em 10em;
 }
 
 .project-element {
@@ -185,6 +200,7 @@ button {
   display: block;
   margin: 1.5em 0em 1.5em 2.3em;
   display: block0;
+  width: 28em;
 }
 
 .col2-showcase-box {
@@ -205,7 +221,7 @@ button {
   color: rgba(12, 12, 12, 0.742);
   width: 20em;
   border-radius: 7em 7em 2em 2em;
-  margin: 1em 10em;
+  margin: 2em 5em;
   text-align: center;
 
   h3 {
@@ -290,6 +306,7 @@ button {
 .main-index{
   font-family: Spaced, Verdana, Geneva;
   display: block;
+  width: 100%;
 }
 
 a {

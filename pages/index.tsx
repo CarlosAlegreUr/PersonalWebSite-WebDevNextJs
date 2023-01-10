@@ -79,8 +79,8 @@ const Home: NextPage = ({ sortedProjects }: any) => {
           Since this is just a personal web and this is enough and won't escalate further, 
           I'm not gonna overenginner the code here.
           
-          Though I've used this pattern inside the elements displayed because who know how many
-          project or businesses or technologies I will have to display in the future. :D */}
+          Though I've used this pattern inside the elements displayed because who knows how many
+          projects, businesses or technologies I will have to display in the future. :D */}
           <div className="content-showing-section">
             {displayElement[0] && <Projects projects={sortedProjects} />}
             {displayElement[1] && <MyBusinesses />}

@@ -15,11 +15,16 @@ const Me: NextPage = () => {
       </Head>
 
       <header className="main-header"> Personal Interests </header>
+
+      <div className="video-div">
+        <video autoPlay loop muted src="/videos/stars.mp4" />
+      </div>
+
       <main className={styles.main}>
         <ShowcaseBox
           title="Healthy lifestyle/Training"
           description={description_healthyLifeStyleGym}
-          image="/images/likes-images/calisthenics.jpg"
+          image="/images/likes-images/calisthenics.webp"
           imageAlt="The developer showing his trainned boddy"
         />
         <div className="me-page-display">
@@ -31,10 +36,10 @@ const Me: NextPage = () => {
           />
 
           <ShowcaseBox
-            title="Freedom"
-            description={description_freedom}
-            image="/images/likes-images/freedom.jpg"
-            imageAlt="Freedom representation"
+            title="Party / Dance / Piano"
+            description={description_partyAndDance}
+            image="/images/likes-images/party.jpg"
+            imageAlt="A party"
           />
         </div>
 
@@ -45,12 +50,12 @@ const Me: NextPage = () => {
             image="/images/likes-images/philosophize.jpg"
             imageAlt="Greek statue"
           />
-
+          
           <ShowcaseBox
-            title="Party / Dance / Piano"
-            description={description_partyAndDance}
-            image="/images/likes-images/party.jpg"
-            imageAlt="A party"
+            title="Freedom"
+            description={description_freedom}
+            image="/images/likes-images/freedom.jpg"
+            imageAlt="Freedom representation"
           />
         </div>
 

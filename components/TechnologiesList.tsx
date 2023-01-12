@@ -34,7 +34,7 @@ const listOfLibraries: Array<techItem> = [
   { name: "Todo...", icon: "/images/default_image.webp" },
 ];
 
-export default function TechnologiesList() {
+export default function TechnologiesList() : JSX.Element {
   return (
     <main className="fill-showcase">
       <hr />

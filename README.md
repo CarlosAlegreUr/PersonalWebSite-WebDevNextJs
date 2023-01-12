@@ -15,9 +15,7 @@ Build with NextJs and Yarn.
 
 ## TODO LIST:
 
-    1.- Pass all files to proper TypeScript. Change all any types with interfaces, types...
-    (https://www.youtube.com/watch?v=qFMMOJucqTw)
-    (https://www.youtube.com/watch?v=v-a7-w8preU)
+    1.- Learn better TypeScript in react (replace any types).
 
     2.- Refactor SASS code, make it clean.
 

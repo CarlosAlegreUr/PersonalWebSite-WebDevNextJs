@@ -5,7 +5,7 @@ interface propsUsed {
   icon: string;
 }
 
-export default function TechItem({ name, icon }: propsUsed) {
+export default function TechItem({ name, icon }: propsUsed) : JSX.Element {
   return (
     <li className="tech-item">
       {name} <Image width={"25"} height={"25"} src={icon} alt={""}/>

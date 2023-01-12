@@ -2,14 +2,14 @@ import Link from "next/link";
 import MyPhoto from "./MyPhoto";
 import SocialMediaNav from "./SocialMediaNav";
 
-export default function AboutMe() {
+export default function AboutMe(): JSX.Element {
   return (
     <section className="about-me-section">
       <MyPhoto />
       <br />
-      <hr/>
+      <hr />
       <p> e-mail : calegreu@gmail.com</p>
-      <hr/>
+      <hr />
       <br />
       <SocialMediaNav />
       <Link href="/me">

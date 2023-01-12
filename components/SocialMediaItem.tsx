@@ -10,7 +10,7 @@ export default function SocialMediaItem({
   logo,
   socialMediaName,
   link,
-}: propsUsed) {
+}: propsUsed): JSX.Element {
   return (
     <li>
       <a href={link} target="_blank" rel="noreferrer">

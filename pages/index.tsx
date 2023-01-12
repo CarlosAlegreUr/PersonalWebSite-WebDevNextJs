@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 
-import type { NextPage } from "next";
+import type { GetStaticProps, GetStaticPropsResult, NextPage } from "next";
 import Head from "next/head";
 
 import {
@@ -38,6 +38,13 @@ function displayReducer(
   return [...state];
 }
 
+// interface sortedProjects {
+// githubAiProjects: Array<JSON>;
+// githubPhoneAppsProjects: Array<JSON>;
+// githubPinnedProjects: Array<JSON>;
+// githubWeb3Projects: Array<JSON>;
+// githubWebProjects: Array<JSON>;
+// }
 const Home: NextPage = ({ sortedProjects }: any) => {
   const [displayElement, dispatch] = useReducer(displayReducer, [
     true,
@@ -80,7 +87,9 @@ const Home: NextPage = ({ sortedProjects }: any) => {
           I'm not gonna overenginner the code here.
           
           Though I've used this pattern inside the elements displayed because who knows how many
-          projects, businesses or technologies I will have to display in the future. :D */}
+          projects, businesses or technologies I will have to display in the future. :D 
+          
+          Well, for now only applied in Projects element.*/}
           <div className="content-showing-section">
             {displayElement[0] && <Projects projects={sortedProjects} />}
             {displayElement[1] && <MyBusinesses />}
@@ -137,7 +146,7 @@ function handleButtonsClicked(
   });
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const httpLink = createHttpLink({
     uri: "https://api.github.com/graphql",
   });
@@ -245,6 +254,8 @@ export const getStaticProps = async () => {
 };
 
 function filterByTopic(topic: string, allRepos: Array<any>) {
+  console.log("All repos .......................");
+  console.log(allRepos);
   const filtered = allRepos.filter(({ node }) => {
     let belongsToTopic = false;
     node.repositoryTopics.edges.forEach((element: any) => {

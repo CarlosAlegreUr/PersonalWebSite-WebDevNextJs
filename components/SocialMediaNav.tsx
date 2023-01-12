@@ -32,7 +32,7 @@ const socialMediaItemsToDisplay: Array<socialMediaItemParams> = [
   },
 ];
 
-export default function SocialMediaNav() {
+export default function SocialMediaNav(): JSX.Element {
   return (
     <nav className="social-media-nav">
       <ul>

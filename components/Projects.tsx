@@ -5,8 +5,9 @@ interface ProjectsSection {
   sectionProjects: Object;
 }
 
+// To add more sections go to index.tsx and add a new filtered section in
+// getStaticsProps() and after that add it to the allSections array in this file.
 export default function Projects({ projects }: any): JSX.Element {
-  // To add a section, add one more element to this array.
   const {
     githubPinnedProjects,
     githubWebProjects,
@@ -14,7 +15,8 @@ export default function Projects({ projects }: any): JSX.Element {
     githubAiProjects,
     githubPhoneAppsProjects,
   } = projects;
-  const allSections: Array<any> = [
+  console.log(githubWeb3Projects);
+  const allSections: Array<ProjectsSection> = [
     {
       title: "Cooler Projects",
       sectionProjects: { projects: githubPinnedProjects },
@@ -39,7 +41,7 @@ export default function Projects({ projects }: any): JSX.Element {
 
   return (
     <section>
-      {allSections.map((section: any, id: number) => {
+      {allSections.map((section: ProjectsSection, id: number) => {
         return (
           <ProjectsSection
             key={id}

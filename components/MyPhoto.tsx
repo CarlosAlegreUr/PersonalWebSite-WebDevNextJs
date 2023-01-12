@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function MyPhoto() {
+export default function MyPhoto(): JSX.Element {
   return (
     <div className="image-and-caption-div">
       <Image

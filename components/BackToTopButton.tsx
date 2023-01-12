@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function BackToTopButton(props: any): JSX.Element {
+export default function BackToTopButton(): JSX.Element {
   const [display, setDisplay] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {

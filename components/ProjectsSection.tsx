@@ -10,6 +10,7 @@ export default function Projects({
   title,
   projectsData,
 }: usedProps): JSX.Element {
+  console.log(projectsData)
   const [displayProjects, setDisplayProjects] = useState(true);
   return (
     <section>

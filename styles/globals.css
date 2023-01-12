@@ -24,7 +24,7 @@ body {
   background-image: url("../public/images/stars.jpg");
   color: white;
   height: 100vh;
-  width: 100vw;
+  width: 100wh;
 }
 
 header {
@@ -98,7 +98,7 @@ button:active {
 .main-section {
   display: flex;
   padding: 0rem 5rem;
-  width: 105%;
+  width: 100%;
 }
 
 .about-me-section {

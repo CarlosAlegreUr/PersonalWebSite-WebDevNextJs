@@ -23,12 +23,12 @@ const socialMediaItemsToDisplay: Array<socialMediaItemParams> = [
   {
     logo: "/images/other-pages-logos/fiverr.webp",
     socialMediaName: "fiverr",
-    link: "https://www.fiverr.com/",
+    link: "https://www.fiverr.com/carlosalegreur?public_mode=true",
   },
   {
     logo: "/images/other-pages-logos/leetcode.webp",
     socialMediaName: "leetCode",
-    link: "https://leetcode.com/",
+    link: "https://leetcode.com/CarlosAlegreUrquizu/",
   },
 ];
 

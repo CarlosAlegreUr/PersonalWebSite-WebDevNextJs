@@ -19,7 +19,7 @@ const listOfProgramingLanguages: Array<techItem> = [
   },
   { name: "TypeScript", icon: "/images/technologies-logos/tslogo.webp" },
   { name: "R", icon: "/images/technologies-logos/rlogo.webp" },
-  { name: "SQL", icon: "/images/technologies-logos/asmlogo.webp" },
+  { name: "MySQL", icon: "/images/technologies-logos/mysqllogo.webp" },
   { name: "Linux Bash", icon: "/images/technologies-logos/bashlogo.webp" },
   { name: "Assembly x86", icon: "/images/technologies-logos/asmlogo.webp" },
 ];

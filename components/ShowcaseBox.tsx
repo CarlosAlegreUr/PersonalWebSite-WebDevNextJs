@@ -24,6 +24,7 @@ export default function ShowCaseBox(props: usedProps): JSX.Element {
       </a>
       <br />
       <p className="text-center"> {props.description} </p>
+      <br />
     </div>
   );
 }

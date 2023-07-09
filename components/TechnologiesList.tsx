@@ -26,6 +26,7 @@ const listOfProgramingLanguages: Array<techItem> = [
 
 const listOfFrameworks: Array<techItem> = [
   { name: "Hardhat", icon: "/images/technologies-logos/hardhat.webp" },
+  { name: "Foundry", icon: "/images/technologies-logos/foundrylogo.webp" },
   { name: "NextJs", icon: "/images/technologies-logos/nextjs.webp" },
   { name: "React", icon: "/images/technologies-logos/react.webp" },
 ];
@@ -34,7 +35,7 @@ const listOfLibraries: Array<techItem> = [
   { name: "Todo...", icon: "/images/default_image.webp" },
 ];
 
-export default function TechnologiesList() : JSX.Element {
+export default function TechnologiesList(): JSX.Element {
   return (
     <main className="fill-showcase">
       <hr />

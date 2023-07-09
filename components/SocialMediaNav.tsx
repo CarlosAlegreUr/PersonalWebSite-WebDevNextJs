@@ -20,11 +20,11 @@ const socialMediaItemsToDisplay: Array<socialMediaItemParams> = [
     socialMediaName: "gitHub",
     link: "https://github.com/CarlosAlegreUr",
   },
-  {
-    logo: "/images/other-pages-logos/fiverr.webp",
-    socialMediaName: "fiverr",
-    link: "https://www.fiverr.com/carlosalegreur?public_mode=true",
-  },
+  // {
+    // logo: "/images/other-pages-logos/fiverr.webp",
+    // socialMediaName: "fiverr",
+    // link: "https://www.fiverr.com/carlosalegreur?public_mode=true",
+  // },
   {
     logo: "/images/other-pages-logos/leetcode.webp",
     socialMediaName: "leetCode",

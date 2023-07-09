@@ -10,7 +10,7 @@ export default function Projects({
   title,
   projectsData,
 }: usedProps): JSX.Element {
-  console.log(projectsData)
+  console.log(projectsData);
   const [displayProjects, setDisplayProjects] = useState(true);
   return (
     <section>
@@ -94,10 +94,15 @@ function mappingNameToImage(projects: any) {
         image = "/images/projects-images/gaimon-and-you.webp";
         break;
       case "DataStructures-Algorithms-DesignPatterns":
-        image =
-          "/images/projects-images/data-structures-and-algo.webp";
+        image = "/images/projects-images/data-structures-and-algo.webp";
         break;
       case "InputControl-SmartContract-DesignPattern":
+        image = "/images/projects-images/inputControl.webp";
+        break;
+      case "CallOrderControl-SmartContract-DesignPattern":
+        image = "/images/projects-images/inputControl.webp";
+        break;
+      case "InteractionControl-SmartContract":
         image = "/images/projects-images/inputControl.webp";
         break;
       case "PersonalWebSite-WebDevNextJs":

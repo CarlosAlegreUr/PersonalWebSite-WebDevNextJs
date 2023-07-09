@@ -157,7 +157,6 @@ button:active {
 
 .project-element {
   width: 2rem;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }

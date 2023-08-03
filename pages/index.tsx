@@ -202,7 +202,7 @@ export const getStaticProps: GetStaticProps = async () => {
     query: gql`
       {
         user(login: "CarlosAlegreUr") {
-          pinnableItems(first: 10) {
+          pinnableItems(first: 15) {
             edges {
               node {
                 ... on Repository {

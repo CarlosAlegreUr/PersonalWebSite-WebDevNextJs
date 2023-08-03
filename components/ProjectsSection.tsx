@@ -111,6 +111,15 @@ function mappingNameToImage(projects: any) {
       case "FairTaxesAnalytics-WebDevReactJs":
         image = "/images/projects-images/FTA.webp";
         break;
+      case "Audits-By-CarlosAlegreUr":
+        image = "/images/projects-images/my-audits.webp";
+        break;
+      case "Forge-Snapshots-Analyzer":
+        image = "/images/projects-images/forge-analyzer.webp";
+        break;
+        case "AuditExamplePractice":
+          image = "/images/projects-images/my-audits.webp";
+          break;
       default:
         image = "/images/default_image.webp";
         break;

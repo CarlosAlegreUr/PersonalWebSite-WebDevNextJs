@@ -44,7 +44,7 @@ export default function TechnologiesList(): JSX.Element {
       <br />
       <TechSection name="Languages" listOfItems={listOfProgramingLanguages} />
       <TechSection name="Frameworks" listOfItems={listOfFrameworks} />
-      <TechSection name="Libraries" listOfItems={listOfLibraries} />
+      {/* <TechSection name="Libraries" listOfItems={listOfLibraries} /> */}
     </main>
   );
 }

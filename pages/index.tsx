@@ -231,8 +231,8 @@ export const getStaticProps: GetStaticProps = async () => {
   const allRepos: any = query.data.user.pinnableItems.edges;
   const webRepos = await filterByTopic("web", allRepos);
   const web3Repos = await filterByTopic("web3", allRepos);
-  const aiRepos = await filterByTopic("AI", allRepos);
-  const phoneAppsRepos = await filterByTopic("phoneApp", allRepos);
+  // const aiRepos = await filterByTopic("AI", allRepos);
+  // const phoneAppsRepos = await filterByTopic("phoneApp", allRepos);
 
   const { user } = data;
   const pinnedItems = user.pinnedItems.edges.map(({ node }: any) => node);
@@ -241,8 +241,8 @@ export const getStaticProps: GetStaticProps = async () => {
     githubPinnedProjects: pinnedItems,
     githubWebProjects: webRepos,
     githubWeb3Projects: web3Repos,
-    githubAiProjects: aiRepos,
-    githubPhoneAppsProjects: phoneAppsRepos,
+    // githubAiProjects: aiRepos,
+    // githubPhoneAppsProjects: phoneAppsRepos,
   };
 
   return {

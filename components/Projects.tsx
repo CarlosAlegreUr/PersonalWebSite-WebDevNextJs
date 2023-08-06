@@ -12,8 +12,8 @@ export default function Projects({ projects }: any): JSX.Element {
     githubPinnedProjects,
     githubWebProjects,
     githubWeb3Projects,
-    githubAiProjects,
-    githubPhoneAppsProjects,
+    // githubAiProjects,
+    // githubPhoneAppsProjects,
   } = projects;
   console.log(githubWeb3Projects);
   const allSections: Array<ProjectsSection> = [
@@ -29,14 +29,14 @@ export default function Projects({ projects }: any): JSX.Element {
       title: "Web 3",
       sectionProjects: { projects: githubWeb3Projects },
     },
-    {
-      title: "AI",
-      sectionProjects: { projects: githubAiProjects },
-    },
-    {
-      title: "Phone Apps",
-      sectionProjects: { projects: githubPhoneAppsProjects },
-    },
+    // {
+    //   title: "AI",
+    //   sectionProjects: { projects: githubAiProjects },
+    // },
+    // {
+    //   title: "Phone Apps",
+    //   sectionProjects: { projects: githubPhoneAppsProjects },
+    // },
   ];
 
   return (

@@ -1,33 +1,19 @@
-#  😊My Personal Web 😊
+# 😊 **My Personal Website** 😊
 
-Pretty self-explanatory, a website that displays in a cute way all my projects and businesses.
+Welcome to my personal website! This space serves as a **professional showcase** of my **projects**, **businesses**, and **skill sets**.
 
-It also contains a little page with more about me as a person. 🧐 
+Though it's mainly a portfolio, the website also includes a little page on who I am, bridging my **professional endeavors** with my **personal aspirations**. 🧐
 
-Let's get a job or live by my own! 🚀🚀🚀
+Whether you're a potential employer, a collaborator, or simply curious about my work, feel free to explore. 🚀🚀🚀
 
-## Tools Used
+## 📝 **TODO LIST**:
 
-Build with NextJs and Yarn.
+    1. Enhance familiarity with TypeScript.
+    2. Refactor SASS code for clarity and maintainability.
+    3. Implement a loading image for smoother page transitions.
+    4. Improve responsiveness of the web, specially on mobile.
+    5. Use Three.js for 3D animating some stuff.
 
+## 📜 **License**
 
-
-
-## TODO LIST:
-
-    1.- Learn better TypeScript in react (replace any types).
-
-    2.- Refactor SASS code, make it clean. 
-
-    3.- Use Three.js to 3D animate the page.
-
-    4.- Checkout SEO html tags.
-
-    5.- Add loading image when loading times.
-
-    6.- Make SASS good looking in phones and other computers.
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [**MIT License**](https://choosealicense.com/licenses/mit/).

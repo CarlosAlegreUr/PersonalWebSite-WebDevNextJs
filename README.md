@@ -2,7 +2,7 @@
 
 Welcome to my personal website! This space serves as a **professional showcase** of my **projects**, **businesses**, and **skill sets**.
 
-Though it's mainly a portfolio, the website also includes a little page on who I am, bridging my **professional endeavors** with my **personal aspirations**. 🧐
+Though it's mainly a portfolio, the website also includes a little page on who I am, bridging my **professional endeavors** with my **personal aspirations**. 🧐 🎮💰
 
 Whether you're a potential employer, a collaborator, or simply curious about my work, feel free to explore. 🚀🚀🚀
 
